@@ -32,6 +32,7 @@ For calculations with VASP DPFT formalism, include the following in the INCAR fi
  <tr> <td> <tt>IBRION = 7</tt> </td> <td> switches *on* the DFPT vibrational analysis (with no symmetry constraints) (<a href="http://cms.mpi.univie.ac.at/vasp/vasp/Optical_properties_density_functional_perturbation_theory_PT.html">man</a>) </td> </tr> 
  <tr> <td> <tt>LEPSILON = .TRUE.</tt> </td> <td> enables to calculate and prints BEC tensor (<a
 href="http://cms.mpi.univie.ac.at/vasp/vasp/LEPSILON_static_dielectric_matrix_ion_clamped_piezoelectric_tensor_Born_effective_charges.html">man</a>) </td> </tr>
+ <tr> <td> <tt>NWRITE = 3</tt> </td> <td> ensures the necessary information is written to the OUTCAR </td> </tr>
  <tr> <td> <tt>NSW = 1</tt> </td> <td> reduces # of ionic steps to 1; unlike for <tt>IBRION=5</tt>, here the setting is very important </td> </tr> </tbody>
 </table>
       
