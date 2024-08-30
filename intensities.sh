@@ -95,7 +95,7 @@ mkdir temps03; mv bornch.* e.vib.*.allions temps03/
 mkdir temps04; mv z.ion* e.vib.*.ion.* temps04/
 mkdir temps05; mv matr-* temps05/
 mkdir results; mv *res*txt results/
-let NMATRIX=$EIG_NVIBS**2
+NMATRIX=$((($EIG_NVIBS**2)))
 printf "%5u atoms found\n%5u vibrations found\n%5u matrices evaluated" \
        $EIG_NIONS $EIG_NVIBS $NMATRIX > results/statistics.txt
   # fast switch to clean up all temporary files
